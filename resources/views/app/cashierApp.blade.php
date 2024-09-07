@@ -17,12 +17,13 @@
                 <div class="w-full">
                     <h1 class="text-4xl font-bold pb-8 text-center">Pilih Menu</h1>
                     <div class="flex gap-2">
-                        <div class="flex w-3/4">
+                        <div class="flex w-3/4">                            
+                            @foreach ($adm as $am)
                             <div class="flex-wrap flex justify-start gap-4">{{-- Menu / Left Content --}}
                                 <div class="flex flex-col justify-center p-8 items-center border border-black">
                                     {{-- Menu List --}}
                                     <img src="{{ asset('img/img1.jpg') }}" class="w-32 h-32" alt="img">
-                                    <p class="text-center text-black font-bold text-2xl">Menu 1</p>
+                                    <p class="text-center text-black font-bold text-2xl">{{$am->nama_menu}}</p>
                                     <p class="text-center text-black text-base">Harga 1</p>
                                 </div>
 
