@@ -7,14 +7,17 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $adm = Admin::get();
-        return view('app.cashierApp',compact('adm'));
+        return view('app.cashierApp', compact('adm'));
     }
-    public function tambah(){
-        return view ('admin.tambahmenu');
+    public function tambah()
+    {
+        return view('admin.tambahmenu');
     }
-    public function submit(Request $request){
+    public function submit(Request $request)
+    {
         $adm = new Admin();
         $adm->nama_menu = request('nama_menu');
         $adm->harga = request('harga');
@@ -22,4 +25,3 @@ class AdminController extends Controller
         return redirect()->route('admin');
     }
 }
-
