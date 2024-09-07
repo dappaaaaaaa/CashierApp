@@ -15,6 +15,7 @@
 
             <div class="flex">{{-- layouting --}}
                 <div class="w-full">
+<<<<<<< HEAD
                     <div class="flex gap-2">
                         <div class="flex w-3/4 overflow-y-auto max-h-screen">
                             <div>
@@ -192,6 +193,21 @@
                                 </div>
                             </div>
 
+=======
+                    <h1 class="text-4xl font-bold pb-8 text-center">Pilih Menu</h1>
+                    <a href="{{ route ('admin.tambah')}}" class="bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Tambah</a>
+                    <div class="flex gap-2">
+                        <div class="flex w-3/4">                            
+                            @foreach ($adm as $am)
+                            <div class="flex-wrap flex justify-start gap-4">{{-- Menu / Left Content --}}
+                                <div class="flex flex-col justify-center p-8 items-center border border-black">
+                                    {{-- Menu List --}}
+                                    <img src="{{ asset('img/img1.jpg') }}" class="w-32 h-32" alt="img">
+                                    <p class="text-center text-black font-bold text-2xl">{{$am->nama_menu}}</p>
+                                    <p class="text-center text-black text-base">Rp.{{$am->harga}}</p>
+                                </div>
+                            @endforeach
+>>>>>>> daee68aff5c7c20693ed14f791d31ebc791bf610
                         </div>
 
 
