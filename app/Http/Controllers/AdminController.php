@@ -9,7 +9,7 @@ class AdminController extends Controller
 {
     public function index(){
         $adm = Admin::get();
-        return view('admin.admin',compact('adm'));
+        return view('app.cashierApp',compact('adm'));
     }
     public function tambah(){
         return view ('admin.tambahmenu');
