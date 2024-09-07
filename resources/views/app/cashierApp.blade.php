@@ -18,7 +18,7 @@
                         <div class="flex w-3/4 overflow-y-auto max-h-screen">
                             <div>
                                 <h1 class="text-4xl font-bold pb-8 text-center">Pilih Menu</h1>
-                                <div class="flex flex-wrap justify-start items-center gap-4">
+                                <div class="flex flex-wrap justify-center items-center gap-4">
                                     <!-- Menu / Left Content -->
                                     @foreach ($adm as $am)
                                         <div
@@ -40,21 +40,13 @@
                             </div>
                         </div>
                         <div class="flex-row w-1/4 border-separate">{{-- Right Content --}}
-                            <div class="h-max w-full border border-black py-4 px-2"> {{-- Ordered Menu --}}
+                            <div class="h-[60vh] w-full border border-black py-4 px-2"> {{-- Ordered Menu --}}
                                 <h1 class="font-bold text-xl pb-4">Menu yang dipesan</h1>
-                                <div class="">
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                </div>
                             </div>
                             <div class="h-1/4 w-full border border-black py-4 px-2">
                                 <h1 class="font-bold text-xl pb-4">Harga Total</h1>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
