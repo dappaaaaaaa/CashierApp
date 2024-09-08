@@ -42,12 +42,9 @@
                         <div class="flex-row w-1/4 border-separate">{{-- Right Content --}}
                             <div class="h-max w-full border border-black py-4 px-2"> {{-- Ordered Menu --}}
                                 <h1 class="font-bold text-xl pb-4">Menu yang dipesan</h1>
-                                <div class="">
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                    <p>gantent</p>
-                                    <p>gantent</p>
+                                <div class="flex justify-between max-w-xs mx-auto my-4 font-sans">
+                                    <span class="font-bold">Menu</span>
+                                    <span class="text-gray-700">Rp. 20,000</span>
                                 </div>
                             </div>
                             <div class="h-1/4 w-full border border-black py-4 px-2">

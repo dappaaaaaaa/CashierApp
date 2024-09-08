@@ -11,13 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin', function (Blueprint $table) {
-            $table->id('id_menu');
-            $table->string('nama_menu');
-            $table->string('kategori');
-            $table->integer('harga');
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+        Schema::create('pembeli', function (Blueprint $table) {
+            $table->id('id_pembeli');
+            $table->string('nama', 255);
+            $table->string('kontak', 255)->nullable();
+            $table->string('status', 50)->nullable();
+            $table->timestamp('created_at')->useCurrent();
         });
     }
 
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin');
+        Schema::dropIfExists('pembeli');
     }
 };
